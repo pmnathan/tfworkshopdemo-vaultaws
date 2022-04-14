@@ -12,13 +12,11 @@ provider "aws" {
   secret_key = data.vault_aws_access_credentials.creds.secret_key
 }
 
-/**
-resource "aws_vpc" "hashi" {
-  cidr_block           = "10.0.0.0/16"
-  enable_dns_hostnames = true
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket"
 
   tags = {
-    Name = "tfc-test-vpc"
+    Name        = "My bucket"
+    Environment = "Dev"
   }
 }
-**/
