@@ -12,6 +12,7 @@ provider "aws" {
   secret_key = data.vault_aws_access_credentials.creds.secret_key
 }
 
+/**
 resource "aws_vpc" "hashi" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
@@ -20,3 +21,4 @@ resource "aws_vpc" "hashi" {
     Name = "tfc-test-vpc"
   }
 }
+**/
