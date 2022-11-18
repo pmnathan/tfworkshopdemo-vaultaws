@@ -3,7 +3,7 @@ provider "vault" {
 
 data "vault_aws_access_credentials" "creds" {
   backend = "aws"
-  role    = "test"
+  role    = "fifththirdmain"
 }
 
 provider "aws" {
