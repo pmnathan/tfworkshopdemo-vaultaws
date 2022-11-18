@@ -40,3 +40,12 @@ resource "aws_s3_bucket" "c" {
   }
 }
 
+resource "aws_s3_bucket" "d" {
+  bucket = "com-hashicorp-prakash-demo-2022-003"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
