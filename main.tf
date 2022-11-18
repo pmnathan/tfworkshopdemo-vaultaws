@@ -20,32 +20,3 @@ resource "aws_s3_bucket" "a" {
     Environment = "Dev"
   }
 }
-
-resource "aws_s3_bucket" "b" {
-  bucket = "com-hashicorp-prakash-demo-2022-001"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
-
-resource "aws_s3_bucket" "c" {
-  bucket = "com-hashicorp-prakash-demo-2022-002"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
-resource "aws_s3_bucket" "d" {
-  bucket = "com-hashicorp-prakash-demo-2022-003"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
