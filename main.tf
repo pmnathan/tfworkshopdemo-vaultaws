@@ -12,8 +12,18 @@ provider "aws" {
   secret_key = data.vault_aws_access_credentials.creds.secret_key
 }
 
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "a" {
   bucket = "com-hashicorp-prakash-demo-2022"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+
+resource "aws_s3_bucket" "b" {
+  bucket = "com-hashicorp-prakash-demo-2022-001"
 
   tags = {
     Name        = "My bucket"
